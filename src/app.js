@@ -26,6 +26,9 @@ app.use(cookieParser())
 app.use('/', express.static(path.join(__dirname, '..', 'public')))
 
 app.use('/', require('./api/routes/root'))
+app.use('/users', require('./api/routes/userRoutes'))
+app.use('/tiles', require('./api/routes/magicTileRoutes'))
+app.use('/boards', require('./api/routes/wonderBoardRoutes'))
 
 app.all('*', (req, res) => {
     res.status(404)

@@ -1,21 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
-
-* {
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f4f4f4;
+    text-align: center;
+    color: #333;
 }
 
-html {
-    font-family: 'Share Tech Mono', monospace;
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+/* Header Styles */
+h1 {
     font-size: 2.5rem;
+    margin-top: 50px;
 }
 
-body {
-    min-height: 100vh;
-    background-color: #000;
-    color: whitesmoke;
-    display: grid;
-    place-content: center;
-    padding: 1rem;
+/* Paragraph Styles */
+p {
+    font-size: 1.2rem;
+}
+
+/* Custom Styles for 404 Page */
+.not-found h1 {
+    color: #e74c3c; /* Red color for the 'Sorry' message */
+}
+
+.not-found p {
+    color: #95a5a6; /* Grey color for the 404 description */
+}
+
+/* Custom Styles for API Splash Page */
+.api-splash h1 {
+    color: #2c3e50; /* Dark blue color for the API header */
+}
+
+.api-splash p {
+    color: #7f8c8d; /* Light grey color for any text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
 }
