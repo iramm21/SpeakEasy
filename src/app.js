@@ -29,6 +29,8 @@ app.use('/', require('./api/routes/root'))
 app.use('/users', require('./api/routes/userRoutes'))
 app.use('/tiles', require('./api/routes/magicTileRoutes'))
 app.use('/boards', require('./api/routes/wonderBoardRoutes'))
+app.use('/images', require('./api/routes/visualGalleryRoutes'))
+app.use('/sounds', require('./api/routes/voiceGardenRoutes'))
 
 app.all('*', (req, res) => {
     res.status(404)

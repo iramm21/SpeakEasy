@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const wonderBoardsController = require('../controllers/wonderBoardsController'); // Adjust the path as necessary
+const wonderBoardsController = require('../controllers/wonderBoardsController');
 
 router.route('/')
       .get(wonderBoardsController.getAllBoards)

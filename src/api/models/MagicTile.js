@@ -1,21 +1,23 @@
 const mongoose = require('mongoose');
 
 const magicTileSchema = new mongoose.Schema({
+      userId: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'User',
+            required: true
+      },
       title: {
             type: String,
             required: true
       },
       image: {
-            type: String,
-            required: true
-      }, // URL to the image
-      sound: {
-            type: String,
-            required: true
-      }, // URL to the sound clip
-      createdBy: {
             type: mongoose.Schema.Types.ObjectId,
-            ref: 'User',
+            ref: 'VisualGallery',
+            required: true
+      },
+      sound: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'VoiceGarden',
             required: true
       },
 },

@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const magicTilesController = require('../controllers/magicTilesController'); // Adjust the path as necessary
+const magicTilesController = require('../controllers/magicTilesController');
 
 router.route('/')
       .get(magicTilesController.getAllTiles)
